@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    nums = [2,7,9,11];
+    target = 9;
+    var twoSum = function(nums, target) {
+        var a = [];
+        for (var i = 0, len = nums.length; i < len; i++) {
+        var tmp = target - nums[i];
+        if (a[tmp] !== undefined) 
+            return [a[tmp], i];
+        a[nums[i]] = i;
+        }
+    };
+ 
+    </script>
+</body>
+</html>
