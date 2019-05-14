@@ -20,7 +20,7 @@ function addTwoNumbers(str1, str2){
     var max = Math.max(l1, l2); //最长的位数
     for (let i = l1 -1, j = l2 - 1, n = max - 1; n >= 0; n--, i--, j-- ){
         var sum =(+str1[i] || 0) + (+str2[j] || 0) + carry;
-        if( sum >= 10) {
+        if(sum >= 10) {
             carry = 1;
             arr.push(sum -10);
         } else {
@@ -35,4 +35,4 @@ function addTwoNumbers(str1, str2){
     return arr.reverse().join('');
 }
 
-console.log(addTwoNumber(num1, num2));
+console.log(addTwoNumbers(str1, str2));
